@@ -1,50 +1,108 @@
+/* 
+
+## Colors
+
+### Primary
+
+- Red: hsl(0, 78%, 62%)
+- Cyan: hsl(180, 62%, 55%)
+- Orange: hsl(34, 97%, 64%)
+- Blue: hsl(212, 86%, 64%)
+
+### Neutral
+
+- Very Dark Blue: hsl(234, 12%, 34%)
+- Grayish Blue: hsl(229, 6%, 66%)
+- Very Light Gray: hsl(0, 0%, 98%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 15px
+
+### Fonts
+
+font-family: 'Poppins', sans-serif;
+- Weights: 200, 400, 600 */
+body {
+  background-color: hsl(0, 0%, 98%);
+}
 main {
   margin: 10px auto;
   padding: 5%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-size: 15px;
+  color: hwb(234 30% 62%);
 }
 .heading {
   text-align: center;
-  margin: 5% 0;
+  margin: 45px 0;
+}
+.heading h1,
+.heading h2 {
+  margin: 0;
+  font-size: 36px;
+}
+.heading h2 {
+  font-weight: 200;
+}
+.heading h1 {
+  font-weight: 600;
 }
 .description {
   text-align: center;
 }
-.card-area {
+ul {
+  list-style: none;
+  padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-ul {
-  list-style: none;
-  padding: 0;
-}
 li {
-  border: 3px solid red;
+  background-color: white;
+  box-shadow: 0px 15px 23px rgba(84, 163, 242, 0.1);
+  border-radius: 5px;
   margin: 10px;
   padding: 30px;
   position: relative;
-  width: 300px;
+  width: 320px;
+  height: 200px;
 }
 li:nth-child(1) {
-  left: -390px;
+  border-top: 5px solid hsl(180, 62%, 55%);
+  left: -410px;
   top: 170px;
 }
 li:nth-child(2) {
-  top: -200px;
+  border-top: 5px solid hsl(0, 78%, 62%);
+  top: -250px;
 }
 li:nth-child(3) {
-  top: -200px;
+  border-top: 5px solid hsl(34, 97%, 64%);
+  top: -240px;
 }
 li:nth-child(4) {
-  left: 390px;
-  top: -570px;
+  border-top: 5px solid hsl(212, 86%, 64%);
+  left: 410px;
+  top: -680px;
 }
 li h4 {
   margin: 0;
+  font-size: 25px;
+  font-weight: 600;
 }
 li p {
-  margin: 20px 0;
+  margin: 15px 0;
+  /* padding-right: 10px; */
+}
+li img {
+  position: absolute;
+  bottom: 30px; /* Расположение внизу с отступом */
+  right: 30px; /* Расположение справа с отступом */
 }
 /* footer */
 .attribution {
