@@ -53,6 +53,7 @@ main {
 }
 .description {
   text-align: center;
+  padding: 0 34%;
 }
 ul {
   list-style: none;
@@ -97,12 +98,11 @@ li h4 {
 }
 li p {
   margin: 15px 0;
-  /* padding-right: 10px; */
 }
 li img {
   position: absolute;
-  bottom: 30px; /* Расположение внизу с отступом */
-  right: 30px; /* Расположение справа с отступом */
+  bottom: 30px;
+  right: 30px;
 }
 /* footer */
 footer {
@@ -118,12 +118,14 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
+  .heading h1,
+  .heading h2 {
+    font-size: 24px;
+  }
+  .description {
+    padding: 5px;
+  }
   li {
-    /* background-color: white;
-  box-shadow: 0px 15px 23px rgba(84, 163, 242, 0.1);
-  border-radius: 5px;
-  margin: 10px;
-  padding: 30px; */
     position: relative;
     width: auto;
   }
@@ -141,6 +143,7 @@ footer {
     left: 0;
     top: 0;
   }
+
   footer {
     top: 0;
   }
